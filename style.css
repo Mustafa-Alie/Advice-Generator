@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Initialization */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*  ///////////////////////////     */
+
+* {
+  font-family: "Manrope", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3c8b64;
+  font-weight: 800;
+}
+
+body {
+  height: 100vh;
+
+  background-color: #1f2632;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice {
+  position: relative;
+  max-width: 30%;
+  background-color: #323a49;
+  padding: 1.5rem 2rem 3rem 2rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.advice__title {
+  color: #52ffa8;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.advice__info {
+  color: #cee3e9;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.advice__btn {
+  background-color: #52ffa8;
+  padding: 1rem;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -2rem;
+}
+
+.advice__btn:hover,
+.advice__btn:active {
+  box-shadow: 0 0 3rem #52ffa8;
+}
+
+.attribution {
+  color: white;
+  max-width: 30%;
+  text-align: center;
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  .advice,
+  .attribution {
+    max-width: 100%;
+  }
+}
